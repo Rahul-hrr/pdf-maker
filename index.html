@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LUXPDF Converter</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="manifest" href="manifest.json">
+</head>
+<body>
+  <header>
+    <h1>✨ LUXPDF <span>CONVERTER</span></h1>
+    <p>Convert Your Images Into Premium Quality PDFs Instantly</p>
+  </header>
+
+  <main>
+    <div class="upload-box">
+      <label for="fileInput" class="upload-btn">📂 Upload or Drag & Drop</label>
+      <input type="file" id="fileInput" multiple accept="image/*" hidden>
+      <p class="upload-text">Drop Images Here</p>
+    </div>
+
+    <div class="options">
+      <div class="option">
+        <label>Page Size</label>
+        <select id="pageSize">
+          <option value="a4">A4</option>
+          <option value="letter">Letter</option>
+          <option value="legal">Legal</option>
+        </select>
+      </div>
+      <div class="option">
+        <label>Orientation</label>
+        <select id="orientation">
+          <option value="portrait">Portrait</option>
+          <option value="landscape">Landscape</option>
+        </select>
+      </div>
+    </div>
+
+    <button id="convertBtn">🚀 Convert to PDF</button>
+  </main>
+
+  <footer>
+    <p>© 2025 LuxPDF Converter — Designed with ❤️ for you</p>
+  </footer>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+  <script src="script.js"></script>
+  <script>
+    if ("serviceWorker" in navigator) {
+      navigator.serviceWorker.register("service-worker.js");
+    }
+  </script>
+</body>
+</html>

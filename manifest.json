@@ -1,0 +1,20 @@
+{
+  "name": "LuxPDF Converter",
+  "short_name": "LuxPDF",
+  "start_url": "index.html",
+  "display": "standalone",
+  "background_color": "#1a093e",
+  "theme_color": "#ff6ec4",
+  "icons": [
+    {
+      "src": "logo.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "logo.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}
